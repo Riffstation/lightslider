@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>lightSlider Demo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <link rel="stylesheet"  href="src/css/lightslider.css"/>
+    <style>
+        body {
+            font-family: sans-serif;
+            background:white;
+            font-size:16px;
+        }
+        hr{
+            color:#f5f5f5;
+            border-color: #f5f5f5;
+            background-color: #f5f5f5;
+            border-style:solid;
+        }
+    	ul{
+			list-style: none outside none;
+		    padding-left: 0;
+            margin: 0;
+		}
+        .lSAction > a {
+            top: 52px;
+        }
+		.content-slider li{
+            width:192px;
+            margin:0 auto;
+		}
+		.content-slider item-wrapper {
+		    margin: 0;
+		    padding: 0;
+		}
+        .item-wrapper {
+            color:grey;
+            font-size:12px;
+
+        }
+        .line1 {
+            font-weight:bold;
+            padding: 4px 0;
+        }
+		.demo{
+            margin:0 auto;
+            width: 1248px;
+		}
+        .item {
+            background: white;
+            padding: 16px;
+        }
+        .item-title {
+            padding: 16px;
+        }
+ul.lSPager.lSpg {
+                display: none;
+            }
+        @media screen and (max-width: 1248px) and (min-width: 1040px) {
+            .demo{
+                width: 1040px;
+            }
+        }
+        @media screen and (max-width: 1039px) and (min-width: 832px) {
+            .demo{
+                width: 832px;
+            }
+        }
+        @media screen and (max-width: 831px) and (min-width: 624px) {
+            .demo{
+                width: 624px;
+            }
+        }
+        @media screen and (max-width: 624px) and (min-width: 416px) {
+            .demo{
+                width: 416px;
+            }
+        }
+        @media screen and (max-width: 416px) {
+            .demo{
+                width: 208px;
+            }
+        }
+
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="src/js/lightslider.js"></script> 
+    <script>
+         $(document).ready(function() {
+            $(".js-content-slider").lightSlider({
+                loop:true,
+                item:6,
+                loop:false,
+                slideMove:6,
+                easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+                slideMargin:16,
+                keyPress:true,
+                responsive : [
+                    {
+                        breakpoint:1250,
+                        settings: {
+                            item:5,
+                            slideMove:5,
+                          }
+                    },
+                    {
+                        breakpoint:1042,
+                        settings: {
+                            item:4,
+                            slideMove:4,
+                          }
+                    },
+                    {
+                        breakpoint:834,
+                        settings: {
+                            item:3,
+                            slideMove:3,
+                          }
+                    },
+                    {
+                        breakpoint:626,
+                        settings: {
+                            item:2,
+                            slideMove:2,
+                          }
+                    },
+                    {
+                        breakpoint:418,
+                        settings: {
+                            item:1,
+                            slideMove:1,
+                          }
+                    }
+                ]
+            });
+        });
+
+    </script>
+</head>
+<body>
+	<div class="demo">
+            <br><br>
+        <div class="item-title">First Feed</div>
+        <div class="item">
+            <ul class="js-content-slider">
+                <li>
+                    <div class="item-wrapper">
+                        <a href="https://www.youtube.com/watch?v=cfudXO_vzWk"><img width="192" height="112" src="http://img.youtube.com/vi/cfudXO_vzWk/mqdefault.jpg"/></a></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href="https://www.youtube.com/watch?v=uNhAvspCpao"><img width="192" height="112" src="http://img.youtube.com/vi/uNhAvspCpao/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/-yPEewaalik/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/WAVTZbLmLzY/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/86WYdDfEfOs/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/4fk2prKnYnI/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/-h2hox--bR8/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/i7Hh1SB74oY/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/ztk1V4utYdA/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/Q021-VyLzpk/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/n_ZSlCFbvcY/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/lP5t01x6NUc/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/90Ud1e423i0/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/ozAswe6R0ts/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/iHAOF8nucMw/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <br><br>
+        <hr><br><br>
+        <div class="item-title">Second Feed</div>
+        <div class="item">
+            <ul class="js-content-slider">
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/dmmFck-aeFQ/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/Jm__TU45RWo/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/dR-B7EVCyII/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/cyBW2IIhHW4/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/HoFrsCHFCKs/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/7SkQiE4hwbg/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/paM0SzpaRTI/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/G4Nka4G_kSs/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/uAZ9R2t5Jd0/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/-I1Gi2ZHy84/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-wrapper">
+                        <a href=""><img width="192" height="112" src="http://img.youtube.com/vi/iHAOF8nucMw/mqdefault.jpg"/></a>
+                        <div class="line1"><span style="color:tomato;">CHORDS</span> Am C Gm Bb</div>
+                        <div class="line2">Title of the song from youtube</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>	
+</body>
+
